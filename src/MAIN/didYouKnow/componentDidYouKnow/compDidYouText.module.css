@@ -1,0 +1,98 @@
+/*! treeElement*/
+.treeElement {
+  /*position: relative;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.treeElement span {
+  font-family: "PTRootUIWebMedium";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #0f142d;
+}
+
+/*!__elementImgSpan*/
+.__elementImgSpan {
+  position: relative;
+  margin-bottom: 13px;
+}
+.__elementImgSpan span {
+  position: absolute;
+  left: -36px;
+  top: 23px;
+}
+/*?imgSize*/
+.imgSize {
+  display: flex;
+  align-self: flex-end;
+  padding-left: 6px;
+  height: 75px;
+}
+/*?spanSize*/
+.spanSize {
+  height: 43px;
+  width: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+/*!.treeElementAround */
+.treeElementAround {
+  display: flex;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #e31f3d;
+  border-radius: 50%;
+  display: block;
+  z-index: 2;
+}
+
+/*! 991px */
+@media (max-width: 991px) {
+  .__elementImgSpan span {
+    left: 17px;
+  }
+}
+/*! 840px */
+@media (max-width: 840px) {
+  .__elementImgSpan span {
+    left: -20px;
+  }
+}
+/*! 575px */
+@media (max-width: 575px) {
+  .treeElement {
+    /*position: relative;*/
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .__elementImgSpan {
+    width: 80px;
+  }
+  .__elementImgSpan span {
+    top: 16px;
+    left: -30px;
+    font-size: 21px;
+  }
+  .imgSize {
+    align-items: center;
+    justify-content: center;
+  }
+  .treeElement {
+    width: 203px;
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+
+  .treeElement span:last-child {
+    font-size: 26px;
+    padding-left: 23px;
+  }
+}

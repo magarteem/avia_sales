@@ -1,0 +1,28 @@
+.main_left {
+  width: 840px;
+  margin-right: 40px;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* !          pasengerPhoneGlobal*/
+.pasengerPhoneGlobal {
+  margin-top: 6px;
+}
+
+/*! 1000px */
+@media (max-width: 1000px) {
+  .main_left {
+    margin-right: 15px;
+  }
+}
+
+/*! 840px */
+@media (max-width: 840px) {
+  .main_left {
+    width: 100%;
+    /*flex-direction: column;*/
+    margin-right: 0;
+  }
+}

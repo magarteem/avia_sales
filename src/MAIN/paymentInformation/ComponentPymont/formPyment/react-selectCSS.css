@@ -1,0 +1,33 @@
+.css-g1d714-ValueContainer {
+  padding-right: 0 !important;
+  height: 53px;
+  border-bottom: solid 1px #d3dce5;
+  border-bottom-left-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+}
+.css-yk16xz-control {
+  border-width: 0px !important;
+  cursor: pointer !important;
+  height: 55px;
+}
+.css-1okebmr-indicatorSeparator,
+.css-b8ldur-Input {
+  display: none;
+}
+.css-1wa3eu0-placeholder {
+  top: auto !important;
+  transform: translateY(0) !important;
+}
+.css-1wa3eu0-placeholder img {
+  width: 25px;
+}
+.css-26l3qy-menu {
+  margin-top: 0 !important;
+}
+.css-tlfecz-indicatorContainer {
+  color: #df1f3d !important;
+}
+.css-1hb7zxy-IndicatorsContainer {
+  border-bottom: solid 1px #d3dce5;
+  height: 54px;
+}

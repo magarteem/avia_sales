@@ -1,0 +1,13 @@
+.howHour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+.howHour span {
+  font-family: "PTRootUIWebMedium";
+  line-height: 1.5;
+  color: #1e2848;
+  padding-left: 10px;
+  font-size: 16px;
+}

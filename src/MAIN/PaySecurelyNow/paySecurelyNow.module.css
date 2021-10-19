@@ -1,0 +1,22 @@
+/* !          paySecurelyNow*/
+.paySecurelyNow {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 40px;
+  padding: 30px 70px 65px 40px;
+  background-color: #1e2848;
+  color: white;
+}
+
+/*! 767px */
+@media (max-width: 767px) {
+  .paySecurelyNow {
+    padding: 30px 40px 57px 40px;
+  }
+}
+/*! 575px */
+@media (max-width: 575px) {
+  .paySecurelyNow {
+    padding: 57px 40px 63px 40px;
+  }
+}

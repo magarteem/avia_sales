@@ -1,0 +1,26 @@
+/* !          CompTitleBillingDetails*/
+._grayBlick {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 15px 25px;
+  text-align: left;
+}
+._grayBlick h4 {
+  font-family: "PTRootUIWebMedium";
+  line-height: 1.5;
+  padding-left: 10px;
+}
+/*! 575px */
+@media (max-width: 575px) {
+  ._grayBlick {
+    padding: 10px 15px;
+  }
+}
+/*! 360px */
+@media (max-width: 360px) {
+  ._grayBlick {
+    align-items: flex-start;
+  }
+}

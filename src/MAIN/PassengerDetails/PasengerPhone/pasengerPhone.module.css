@@ -1,0 +1,159 @@
+/* !          _divCompDown*/
+._divCompDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  height: auto;
+  min-height: 50px;
+  padding: 10px 9px;
+  background-color: white;
+}
+
+/* !          _grayBlick*/
+._grayBlick {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0 15px 25px;
+}
+._grayBlick span {
+  width: 100%;
+  padding-left: 9px;
+  padding-right: 15px;
+  font-family: "PTRootUIWebMedium";
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  /*background-color: red;*/
+}
+
+/*?_passengerH1*/
+._passengerH1 {
+  font-family: "PTRootUIWebBold";
+  font-size: 21px;
+  line-height: 1.5;
+  margin-top: 30px;
+  padding: 0 30px;
+}
+/*?_passDivFlexItemsMain*/
+._passDivFlexItemsMain {
+  display: flex;
+  gap: 11px;
+}
+/*?_passDivFlex*/
+._passDivFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: left;
+  padding: 0 30px;
+  margin-top: 15px;
+  margin-bottom: 45px;
+  width: 100%;
+}
+._passDivFlex p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+._passDivFlexItems {
+  width: 100%;
+}
+._passFlexP {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 8px;
+}
+._FlexItemsSelfP {
+  max-width: 200px;
+}
+
+/*?  */
+
+/*? _DivFlexInput*/
+._DivFlexInput {
+  /*._DivFlexSelect {*/
+  cursor: pointer;
+  height: 60px;
+  background-color: #f3f8fd;
+  padding: 18px 20px;
+  font-family: "PTRootUIWebBold";
+  font-size: 15px;
+  line-height: 1.86;
+  width: 250px;
+  color: #9ba3be;
+}
+._DivFlexInput:focus::placeholder {
+  color: transparent;
+}
+._DivFlexInput::placeholder {
+  font-family: "PTRootUIWebBold";
+  font-size: 15px;
+  line-height: 1.73;
+  color: #9ba3be;
+}
+
+/*! 1300px */
+@media (max-width: 1300px) {
+  /*?_passDivFlexItemsMain*/
+  ._passDivFlexItemsMain {
+    width: 100%;
+  }
+  /*?_passDivFlex*/
+  ._passDivFlex {
+    margin-top: 0;
+  }
+  ._passDivFlexItems {
+    padding-bottom: 20px;
+  }
+  /*? _DivFlexInput*/
+  ._passDivFlex {
+    flex-wrap: wrap;
+  }
+  ._FlexItemsSelfP {
+    max-width: 100%;
+  }
+  ._DivFlexInput {
+    width: 100%;
+  }
+  ._DivFlexSelect {
+    width: 100%;
+  }
+}
+/*! 575px */
+@media (max-width: 575px) {
+  /*?_passDivFlexItemsMain*/
+  ._passDivFlexItemsMain {
+    width: 100%;
+    flex-direction: column;
+    max-width: 80%;
+    justify-content: center;
+  }
+  ._passDivFlexItemsMain div {
+    padding-bottom: 0;
+  }
+  /*? _DivFlexInput*/
+  ._passDivFlex {
+    justify-content: center;
+    margin-bottom: 27px;
+  }
+  ._passFlexP {
+    padding-bottom: 6px;
+  }
+}
+/*! 480px */
+@media (max-width: 480px) {
+  /*?_passDivFlexItemsMain*/
+  ._passDivFlexItemsMain {
+    max-width: 100%;
+  }
+}
+/*! 360px */
+@media (max-width: 360px) {
+  /*? _DivFlexInput*/
+  ._passDivFlex {
+    padding: 0px 15px;
+  }
+}

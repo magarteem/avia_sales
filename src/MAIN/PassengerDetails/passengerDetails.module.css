@@ -1,0 +1,27 @@
+/* !          divLeftComp*/
+.divLeftComp {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+/* !          _divCompDown*/
+._divCompDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  height: auto;
+  min-height: 50px;
+  padding: 10px 9px;
+  background-color: white;
+}
+
+/*  */
+/*  */
+/*! 840px */
+@media (max-width: 840px) {
+  /*?divLeftComp*/
+  .divLeftComp {
+    width: 100%;
+  }
+}

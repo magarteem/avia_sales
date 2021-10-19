@@ -1,0 +1,30 @@
+.mainGlobal {
+  max-width: 100vw;
+  padding: 0 15px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 36px auto 0 auto;
+}
+
+/*! 840px */
+@media (max-width: 840px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+/*! 575px */
+@media (max-width: 575px) {
+  .main {
+    margin: 20px auto 0 auto;
+  }
+}
+/*! 375px */
+@media (max-width: 375px) {
+  .mainGlobal {
+    padding: 0 5px;
+  }
+}

@@ -1,0 +1,33 @@
+/* !          SecurityBillDetails*/
+.securityBillDetails {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 25px 35px;
+}
+.securityBillDetails img {
+  padding-left: 50px;
+}
+
+/*! 991px */
+@media (max-width: 991px) {
+  .securityBillDetails {
+    justify-content: space-between;
+  }
+  .securityBillDetails img {
+    padding-left: 0;
+  }
+}
+/*! 575px */
+@media (max-width: 575px) {
+  .securityBillDetails img {
+    padding-bottom: 25px;
+  }
+}
+/*! 575px */
+@media (max-width: 575px) {
+  .securityBillDetails {
+    padding: 15px 0 0 0;
+  }
+}

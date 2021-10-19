@@ -1,0 +1,19 @@
+/* !          block__Item*/
+.block__Item {
+  display: flex;
+  height: 162px;
+  background-color: white;
+}
+.block__Item840px {
+  display: none;
+}
+
+/*! 840px */
+@media (max-width: 840px) {
+  .block__Item {
+    display: none;
+  }
+  .block__Item840px {
+    display: block;
+  }
+}

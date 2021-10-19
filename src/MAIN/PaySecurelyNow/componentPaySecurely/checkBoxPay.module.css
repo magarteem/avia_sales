@@ -1,0 +1,61 @@
+/* !          checkBoxPay*/
+.checkBoxPay {
+  display: flex;
+}
+
+/*?.сheckBoxStyle */
+.сheckBoxStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 23px;
+  height: 23px;
+  background: #ffffff;
+  border: 1.5px solid #9ba3be;
+  border-radius: 5px;
+  margin-right: 6px;
+}
+.сheckBoxStyle img {
+  width: 17px;
+  height: 13px;
+  display: none;
+}
+.сheckBoxStyle input:checked ~ img {
+  display: block;
+}
+.сheckBoxStyle input {
+  display: none;
+}
+
+/*? checkBoxText*/
+.checkBoxText {
+  font-family: "PTRootUIWebBold";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #fff;
+  text-align: left;
+}
+.checkBoxTextSelect {
+  color: #e31f3d;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*! 575px */
+@media (max-width: 575px) {
+  .checkBoxPay {
+    flex-direction: column;
+  }
+  .сheckBoxStyle {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 13px;
+  }
+  .сheckBoxStyle img {
+    width: 23px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,47 @@
+/*! plantMoreInput*/
+.plantMoreInput {
+  display: flex;
+  align-items: center;
+}
+.plantMoreInput span {
+  display: none;
+  font-family: "PTRootUIWebMedium";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 2;
+  color: #1e2848;
+  padding-right: 8px;
+}
+.plantMoreInput input {
+  display: flex;
+  align-items: center;
+  border: solid 1px #d8e0e8;
+  background-color: #fff;
+  padding: 10px 20px;
+  font-family: "PTRootUIWebMedium";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 2;
+  color: #1e2848;
+  width: 235px;
+  height: 60px;
+}
+.plantMoreInput input::placeholder {
+  font-family: "PTRootUIWebBold";
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: 0.56px;
+  line-height: 2;
+  color: #9ba3be;
+  transform: translateY(-3px);
+}
+
+/*! 575px */
+@media (max-width: 575px) {
+  .plantMoreInput {
+    align-self: flex-start;
+  }
+  .plantMoreInput span {
+    display: block;
+  }
+}

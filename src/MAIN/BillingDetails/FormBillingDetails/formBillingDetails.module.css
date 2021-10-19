@@ -1,0 +1,89 @@
+/* !          formBillingDetails*/
+.formBillingDetails {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px;
+  gap: 5px 5px;
+}
+
+.inpCountry,
+.inpState,
+.inpCity,
+.inpAddress,
+.inpEmail,
+.inpZIPCode {
+  cursor: pointer;
+  height: 60px;
+  border: solid 1px #d3dce5;
+  padding: 18px 14px;
+  font-family: "PTRootUIWebMedium";
+  font-size: 15px;
+  line-height: 1.86;
+  color: #9ba3be;
+}
+.formBillingDetails input:focus::placeholder {
+  color: transparent;
+}
+
+.inpCity,
+.inpAddress {
+  flex: 1 1 49%;
+}
+.inpEmail {
+  width: 39%;
+}
+.inpZIPCode {
+  width: 24%;
+}
+
+/*?BillingPhone*/
+.BillingPhone {
+  display: flex;
+  width: 34%;
+  height: 60px;
+  border: 1px solid #d3dce5;
+}
+.BillingPhone input {
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+
+  padding: 18px 4px;
+  font-family: "PTRootUIWebMedium";
+  font-size: 15px;
+  line-height: 1.86;
+  color: #9ba3be;
+}
+
+/*! 1200px */
+@media (max-width: 1200px) {
+  .inpZIPCode,
+  .inpEmail {
+    flex: 1 1 49%;
+  }
+  .BillingPhone {
+    flex: 0 1 49.5%;
+  }
+}
+/*! 575px */
+@media (max-width: 575px) {
+  .formBillingDetails {
+    padding: 30px 40px 40px;
+  }
+  .inpCity,
+  .inpAddress,
+  .inpZIPCode,
+  .inpEmail {
+    flex: 1 1 100%;
+  }
+  .BillingPhone {
+    flex: 0 1 100%;
+  }
+}
+/*! 375px */
+@media (max-width: 375px) {
+  .formBillingDetails {
+    padding: 25px 0;
+  }
+}

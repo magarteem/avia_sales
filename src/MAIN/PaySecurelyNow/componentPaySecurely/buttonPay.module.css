@@ -1,0 +1,31 @@
+/* !          buttonPay*/
+.buttonPay {
+  margin-top: 35px;
+}
+.buttonPay {
+  flex: 0 0 309px;
+  padding: 0 50px;
+  height: 60px;
+  border-radius: 9px;
+  background-color: #e31f3d;
+}
+.buttonPayInButton span {
+  font-family: "PTRootUIWebBold";
+  font-size: 21px;
+  line-height: 1.24;
+  letter-spacing: 0.21px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+/*! 575px */
+@media (max-width: 575px) {
+  .buttonPay {
+    flex: 1 1 309px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .buttonPayInButton img {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+/*! phoneBillingDetails*/
+.my-containerBilling.form-control {
+  height: 100%;
+  width: 100%;
+}
+
+.my-inputBilling.form-control {
+  height: 100%;
+  width: calc(100% - 60px);
+  z-index: 3;
+  margin-left: 60px;
+  padding-left: 0;
+  border: none;
+}
+
+.my-buttonBilling.flag-dropdown {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.my-buttonBilling.flag-dropdown .arrow {
+  margin-left: 5px;
+}
+.my-buttonBilling .selected-flag .flag {
+  transform: scale(1.3);
+  margin-left: 5px;
+}
+
+/* ! dropdown */
+.my-dropdownBilling.country-list {
+  margin: 0;
+  font-family: "PTRootUIWebBold";
+  font-size: 15px;
+  line-height: 1;
+  color: #000;
+  width: 100%;
+  text-align: left;
+}

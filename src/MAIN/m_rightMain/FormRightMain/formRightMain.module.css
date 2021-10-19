@@ -1,0 +1,168 @@
+.form {
+  padding: 23px 34px 36px 34px;
+}
+.formTitle {
+  font-family: "PTRootUIWebBold";
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+/*? FormCheckbox*/
+.FormCheckbox {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/*?form_P*/
+.form_P {
+  line-height: 1.5;
+}
+
+/*?formInput*/
+.formInput {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/*?formButton*/
+.formButton {
+  display: none;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+/*?formAddDiv*/
+.formAddDiv {
+  margin-top: 42px;
+}
+/*?formInfo*/
+.formInfo {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 55px;
+}
+.formInfo span {
+  padding-left: 9px;
+  line-height: 1.5;
+}
+
+/* ! ReactDatePicker*/
+.containerDatepicker {
+  width: calc(50% - 3px);
+}
+/*?  elementInput*/
+.elementInput {
+  width: 100%;
+  margin-top: 18px;
+}
+.formInpTitle {
+  font-family: "PTRootUIWebBold";
+  line-height: 1.5;
+  font-size: 16px;
+}
+.elementInput input {
+  height: 60px;
+  background-color: #f3f8fd;
+  padding: 5px 20px;
+  font-family: "PTRootUIWebBold";
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  color: #9ba3be;
+  max-width: 100%;
+}
+.elementInput input:focus::placeholder {
+  color: transparent;
+}
+.elementInput input::placeholder {
+  font-family: "PTRootUIWebBold";
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  color: #9ba3be;
+}
+/* !      */
+
+/*! 1000px */
+@media (max-width: 1000px) {
+  .formInput {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .containerDatepicker {
+    width: 100%;
+  }
+  .elementInput input {
+    width: 100%;
+  }
+}
+/*! 991px */
+@media (max-width: 991px) {
+  .form {
+    padding: 23px 20px 36px 20px;
+  }
+  .formInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .formInfo span {
+    line-height: 1.2;
+  }
+
+  .FormCheckbox {
+    margin-bottom: 20px;
+  }
+  .formAddDiv {
+    margin-top: 20px;
+  }
+}
+
+/*! 840px */
+@media (max-width: 840px) {
+  .form {
+    padding: 35px 39px;
+  }
+
+  .formTitle {
+    margin-bottom: 5px;
+  }
+  .form_P {
+    padding: 15px 0 11px;
+  }
+  .formInput {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .formAddDiv {
+    margin-top: 59px;
+  }
+  .containerDatepicker {
+    width: 49%;
+  }
+}
+
+/*! 480px */
+@media (max-width: 480px) {
+  .formInfo {
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  .formInfo span {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 13px;
+  }
+  .formButton {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerDatepicker {
+    width: 100%;
+  }
+}
+/*! 375px */
+@media (max-width: 375px) {
+  .form {
+    padding: 35px 20px;
+  }
+}

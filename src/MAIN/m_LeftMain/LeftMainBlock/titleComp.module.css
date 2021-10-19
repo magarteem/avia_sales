@@ -1,0 +1,62 @@
+/* !          _BlockUP*/
+._BlockUP {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #11172a;
+}
+._BlockUP img {
+  padding: 0 23px;
+}
+._BlockUP h1 {
+  font-family: "PTRootUIWebBold";
+  font-size: 28px;
+  color: white;
+}
+
+/* !          _BlockMain*/
+._BlockMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  background-color: #1e2848;
+  color: #fff;
+}
+._BlockMain h2 {
+  padding-left: 34px;
+  font-family: "PTRootUIWebBold";
+  font-size: 18px;
+  line-height: 1.11;
+}
+._BlockMain p {
+  padding-right: 23px;
+  font-family: "PTRootUIWebRegular";
+  font-size: 12px;
+  line-height: 1.5;
+}
+._BlockMain p span {
+  font-family: "PTRootUIWebBold";
+  font-size: 12px;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+/*! 575px */
+@media (max-width: 575px) {
+  ._BlockMain {
+    height: auto;
+    flex-direction: column;
+  }
+  ._BlockMain h2 {
+    padding-left: 0;
+    padding: 16px 0 13px;
+  }
+  ._BlockMain p {
+    padding-bottom: 12px;
+  }
+  ._BlockUP img {
+    padding: 0 12px;
+  }
+}

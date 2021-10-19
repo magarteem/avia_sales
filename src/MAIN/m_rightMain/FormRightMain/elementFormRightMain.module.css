@@ -1,0 +1,200 @@
+/*? FormCheckbox*/
+
+._CheckboxLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+._CheckboxLabel p {
+  padding-left: 10px;
+}
+._CheckboxLabel span {
+  position: relative;
+  display: block;
+  height: 23px;
+  width: 23px;
+  border: 1.5px solid #9ba3be;
+  border-radius: 5px;
+}
+._CheckboxLabel span::after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 9px;
+  width: 9px;
+  background-color: #9ba3be;
+}
+._CheckboxLabel img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+._CheckboxLabel input {
+  display: none;
+}
+._CheckboxLabel input:checked ~ span::after {
+  display: block;
+}
+
+/*?  elementInput*/
+.elementInput {
+  max-width: calc(50% - 3px);
+  margin-top: 18px;
+}
+.formInpTitle {
+  font-family: "PTRootUIWebBold";
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.elementInput input {
+  height: 60px;
+  background-color: #f3f8fd;
+  padding: 5px 20px;
+  font-family: "PTRootUIWebBold";
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  color: #9ba3be;
+  max-width: 100%;
+}
+.elementInput input:focus::placeholder {
+  color: transparent;
+}
+.elementInput input::placeholder {
+  font-family: "PTRootUIWebBold";
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  color: #9ba3be;
+}
+
+/*? FormButton*/
+.buttonCansel,
+.buttonRed {
+  display: none;
+  width: 45%;
+  height: 60px;
+  border-radius: 9px;
+  font-family: "PTRootUIWebBold";
+  font-size: 21px;
+  line-height: 1.24;
+}
+.buttonCansel {
+  background-color: #e8e8e8;
+}
+.buttonRed {
+  background-color: #e31f3d;
+  color: #fff;
+}
+
+/*?formAdd*/
+.formAdd {
+  display: flex;
+  align-items: center;
+}
+.formAdd span {
+  padding-left: 11px;
+  font-family: "PTRootUIWebMedium";
+  font-size: 18px;
+  line-height: 1.44;
+  color: #4c5160;
+}
+
+/*! 1000px */
+@media (max-width: 1000px) {
+  .elementInput {
+    max-width: 100%;
+  }
+  .elementInput input {
+    width: 100%;
+  }
+}
+/*! 991px */
+@media (max-width: 991px) {
+  .formAdd span {
+    padding-left: 5px;
+    font-size: 16px;
+  }
+  .formAdd img {
+    height: 22px;
+  }
+}
+/*! 840px */
+@media (max-width: 840px) {
+  .elementInput {
+    width: 49%;
+  }
+  .elementInput input {
+    width: 100%;
+  }
+  ._CheckboxLabel span {
+    height: 35px;
+    width: 35px;
+  }
+  ._CheckboxLabel span::after {
+    background-color: transparent;
+  }
+  ._CheckboxLabel input:checked ~ span img {
+    display: block;
+  }
+  .buttonCansel,
+  .buttonRed {
+    display: block;
+  }
+
+  .formAdd img {
+    height: 35px;
+  }
+}
+/*! 767px */
+@media (max-width: 767px) {
+  .formAdd span {
+    font-size: 15px;
+  }
+}
+/*! 480px */
+@media (max-width: 480px) {
+  .buttonCansel,
+  .buttonRed {
+    font-size: 18px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .elementInput {
+    width: 100%;
+  }
+  .formInpTitle {
+    display: none;
+  }
+  .elementInput {
+    margin-top: 10px;
+  }
+  .formAdd span {
+    font-size: 18px;
+    padding-left: 19px;
+  }
+}
+/*! 414px */
+@media (max-width: 414px) {
+  .buttonCansel,
+  .buttonRed {
+    font-size: 21px;
+  }
+}
+/*! 350px */
+@media (max-width: 350px) {
+  .formAdd img {
+    height: 32px;
+  }
+  .formAdd span {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,95 @@
+/* !          formPasenger*/
+.formPasenger {
+  background-color: #e8edf3;
+  padding: 20px 30px 43px 30px;
+}
+.elemInpPassUP {
+  margin-bottom: 37px;
+}
+.elemInpPassUP_up {
+  margin-top: 12px;
+}
+
+/*?formPassDown*/
+.formPassDown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+._PassDownSpan {
+  position: relative;
+}
+._PassDownSpan::after {
+  position: absolute;
+  content: url("../../imgMain/inputVector.svg");
+  right: 20px;
+  top: 56%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/*?  elemButtonPass*/
+.elemButtonPass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 60px;
+  margin-top: 7px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.elemButtonPass:hover {
+  background-color: #dedede;
+}
+
+/*! 1300px */
+@media (max-width: 1300px) {
+  .formPassDown {
+    justify-content: flex-start;
+  }
+  .formPassDown div:nth-child(even) {
+    margin-left: 10px;
+  }
+}
+
+/*! 991px */
+@media (max-width: 991px) {
+  .formPassDown {
+    justify-content: space-between;
+  }
+  .formPassDown div:nth-child(even) {
+    /*margin-left: 0;*/
+    gap: 10px;
+  }
+}
+/*! 920px */
+@media (max-width: 920px) {
+  .formPassDown div:nth-child(even) {
+    margin-left: 0;
+  }
+}
+
+/*! 480px */
+@media (max-width: 480px) {
+  .formPasenger {
+    background-color: #e8edf3;
+    padding: 20px 30px 24px 30px;
+  }
+  ._PassDownSpan {
+    width: 100%;
+  }
+  .formPassDown {
+    justify-content: center;
+  }
+  .elemButtonPass {
+    margin-top: 11px;
+  }
+}
+/*! 360px */
+@media (max-width: 360px) {
+  .formPasenger {
+    padding: 20px 15px 24px 15px;
+  }
+}

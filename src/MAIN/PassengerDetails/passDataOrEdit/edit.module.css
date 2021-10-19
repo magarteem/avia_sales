@@ -1,0 +1,216 @@
+/* !          _DownName*/
+._DownNameEdit {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 0 20px;
+  padding-left: 30px;
+  padding-right: 11px;
+  text-align: left;
+}
+
+/*? _EditUP*/
+._EditUP {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+._EditUP h1 {
+  font-family: "PTRootUIWebBold";
+  font-size: 28px;
+  line-height: 1.5;
+}
+._EditUP div {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+._EditUP div:hover {
+  transform: scale(1.4);
+}
+._EditUP div::after,
+._EditUP div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  transform: rotate(45deg);
+}
+._EditUP div::after {
+  transform: rotate(45deg);
+}
+._EditUP div::before {
+  transform: rotate(-45deg);
+}
+/*?_EditMain*/
+._EditMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+._EditMainUP {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 100%;
+}
+._EditMainCheckBox {
+  flex: 0 1 15%;
+}
+._EditMainCheckBox h1 {
+  font-family: "PTRootUIWebBold";
+  font-size: 21px;
+  line-height: 1.5;
+}
+._EditMainCheckBox span {
+  font-family: "PTRootUIWebRegular";
+  font-size: 16px;
+  line-height: 150%;
+  padding-bottom: 13px;
+  display: block;
+}
+._checkBoxItems {
+  display: flex;
+  align-items: center;
+}
+._EditMainInput {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding-right: 20px;
+  flex: 0 1 85%;
+}
+._InputBlock {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 1 100%;
+  gap: 0 8px;
+}
+
+/*TODO..>    editInp*/
+.editInp {
+  flex: 0 1 250px;
+  margin-top: 7px;
+}
+.editInp input {
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px 20px;
+  font-family: "PTRootUIWebBold";
+  font-size: 15px;
+  line-height: 1.73;
+  border-radius: 5px;
+  color: #9ba3be;
+  border: 1px solid #dee5ec;
+}
+.editInp input:focus::placeholder {
+  color: transparent;
+}
+.editInp input::placeholder {
+  font-family: "PTRootUIWebBold";
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  color: #9ba3be;
+}
+/*TODO..<*/
+
+/*?_editDown*/
+._editDown {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 100%;
+  gap: 0 8px;
+  padding-right: 20px;
+  padding-top: 22px;
+}
+._editDownInner {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 1 70%;
+  gap: 0 8px;
+}
+._conf_cansel {
+  flex: 0 1 250px;
+  font-family: "PTRootUIWebBold";
+  font-size: 21px;
+  line-height: 1.24;
+  letter-spacing: 0.21px;
+  cursor: pointer;
+  border-radius: 9px;
+  height: 60px;
+  transition: all 0.2s;
+}
+._confurm {
+  background-color: #e31f3d;
+  color: #fff;
+}
+._confurm:hover {
+  background-color: #c71732;
+}
+._cansel {
+  background-color: transparent;
+  border: 1px solid #dedede;
+}
+._cansel:hover {
+  background-color: #dedede;
+}
+
+/*! 1125px */
+@media (max-width: 1125px) and (min-width: 840px), (max-width: 767px) {
+  ._InputBlock {
+    flex-direction: column;
+  }
+  .editInp {
+    flex: 0 1 auto;
+  }
+  ._editDownInner {
+    flex: 0 1 100%;
+  }
+}
+
+/*! 757px */
+@media (max-width: 757px) {
+  ._EditMainUP {
+    flex-direction: column;
+  }
+  ._EditUP h1 {
+    font-size: 26px;
+  }
+  ._EditUP div {
+    width: 25px;
+    height: 25px;
+  }
+  ._EditMainInput {
+    margin-top: 52px;
+  }
+  ._editDown {
+    padding-top: 10px;
+  }
+  ._editDownInner {
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  ._conf_cansel {
+    flex: 0 1 auto;
+  }
+}
+/*! 575px */
+@media (max-width: 575px) {
+  ._DownNameEdit {
+    padding: 0 10px;
+  }
+  ._EditMainInput,
+  ._editDown {
+    padding-right: 0;
+  }
+}

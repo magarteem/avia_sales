@@ -1,0 +1,44 @@
+/* !          _grayBlick*/
+._grayBlick {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 14px 30px;
+  text-align: left;
+}
+._grayBlickLeft {
+  display: flex;
+  align-items: center;
+}
+._grayBlickLeft span {
+  padding-left: 13px;
+  font-family: "PTRootUIWebMedium";
+}
+/*?_grayBlickRight*/
+._grayBlickRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+._grayBlickRight img {
+  width: 42px;
+  height: 30px;
+  margin-right: 23px;
+  border-radius: 5px;
+}
+/*! 575px */
+@media (max-width: 575px) {
+  ._grayBlick {
+    padding: 18px 23px;
+  }
+
+  ._grayBlickRight {
+    display: none;
+  }
+
+  ._grayBlickLeft span {
+    padding-left: 30px;
+    line-height: 1.5;
+  }
+}

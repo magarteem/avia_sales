@@ -1,0 +1,66 @@
+/* ! ReactDatePicker*/
+.containerDatepicker {
+  width: calc(50% - 3px);
+
+  /*height: 60px;*/
+}
+/*?  elementInput*/
+.elementInput {
+  width: 100%;
+  height: 60px;
+  margin-top: 18px;
+}
+.formInpTitle {
+  font-family: "PTRootUIWebBold";
+  line-height: 1.5;
+  font-size: 16px;
+}
+.elementInput input {
+  height: 60px;
+  background-color: #f3f8fd;
+  padding: 5px 20px;
+  font-family: "PTRootUIWebBold";
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  color: #9ba3be;
+  max-width: 100%;
+}
+.elementInput input:focus::placeholder {
+  color: transparent;
+}
+.elementInput input::placeholder {
+  font-family: "PTRootUIWebBold";
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  color: #9ba3be;
+}
+/* !      */
+
+/*! 1000px */
+@media (max-width: 1000px) {
+  .containerDatepicker {
+    width: 100%;
+  }
+  .elementInput input {
+    width: 100%;
+  }
+}
+
+/*! 840px */
+@media (max-width: 840px) {
+  .containerDatepicker {
+    width: 49%;
+  }
+}
+
+/*! 480px */
+@media (max-width: 480px) {
+  .containerDatepicker {
+    width: 100%;
+  }
+  .formInpTitle {
+    display: none;
+  }
+}

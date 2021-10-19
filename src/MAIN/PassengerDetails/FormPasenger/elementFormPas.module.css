@@ -1,0 +1,93 @@
+/* !          ElementFormPas*/
+/*? _CheckboxPass*/
+._CheckboxPass {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+._CheckboxPass p {
+  /*padding-left: 14px;
+  font-family: "PTRootUIWebBold";
+  font-size: 21px;*/
+  line-height: 1.5;
+}
+._CheckboxPass span {
+  position: relative;
+  display: block;
+  min-height: 23px;
+  min-width: 23px;
+  border: 1.5px solid #9ba3be;
+  border-radius: 5px;
+}
+
+._CheckboxPass img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 13px;
+
+  transform: translate(-50%, -50%);
+}
+._CheckboxPass input {
+  display: none;
+}
+._CheckboxPass input:checked ~ span img {
+  display: block;
+}
+
+/*?  elemInpPass*/
+.elemInpPass {
+  width: 250px;
+  margin-top: 7px;
+}
+.elemInpPass input {
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px 20px;
+  font-family: "PTRootUIWebBold";
+  font-size: 15px;
+  line-height: 1.73;
+  border-radius: 5px;
+  color: #9ba3be;
+  border: 1px solid #dee5ec;
+}
+.elemInpPass input:focus::placeholder {
+  color: transparent;
+}
+.elemInpPass input::placeholder {
+  font-family: "PTRootUIWebBold";
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  color: #9ba3be;
+}
+
+/*! 575px */
+@media (max-width: 575px) {
+  ._CheckboxPass {
+    align-items: flex-start;
+  }
+  ._CheckboxPass span {
+    margin-top: 5px;
+  }
+  ._CheckboxPass p {
+    text-align: left;
+  }
+}
+/*! 480px */
+@media (max-width: 480px) {
+  /*?  elemInpPass*/
+  .elemInpPass {
+    width: 100%;
+  }
+  ._CheckboxPass {
+    padding-right: 0;
+  }
+  ._CheckboxPass p {
+    padding-left: 10px;
+  }
+}

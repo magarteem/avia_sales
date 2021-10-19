@@ -1,0 +1,90 @@
+/* !          _divTitleComp*/
+._divTitleComp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #11172a;
+}
+._divTitleComp h1 {
+  font-family: "PTRootUIWebBold";
+  font-size: 28px;
+  color: white;
+}
+
+/* !          _divCompDown*/
+._divCompDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  height: auto;
+  min-height: 50px;
+  background-color: white;
+}
+
+/* !          _compDownGray*/
+._compDownGray {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f3f8fd;
+}
+
+/*! CompGrayConfirm*/
+._grayBlick {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 28px 61px 21px 61px;
+  text-align: left;
+}
+._grayBlick p {
+  font-family: "PTRootUIWebBold";
+  font-size: 16px;
+  line-height: 1.4;
+}
+._grayBlick button {
+  cursor: pointer;
+  height: 60px;
+  min-width: 235px;
+  border-radius: 9px;
+  background-color: #e31f3d;
+  font-family: "PTRootUIWebBold";
+  font-size: 21px;
+  line-height: 1.24;
+  letter-spacing: 0.21px;
+  color: #fff;
+  margin-left: 25px;
+}
+/*! 991px */
+@media (max-width: 991px) {
+  ._grayBlick {
+    flex-direction: column;
+    padding: 23px 15px;
+  }
+  ._grayBlick button {
+    margin-top: 15px;
+    margin-left: 0;
+    width: 305px;
+  }
+}
+/*! 575px */
+@media (max-width: 575px) {
+  ._grayBlick {
+    padding: 23px 15px 40px;
+  }
+  ._grayBlick button {
+    /*min-width: 235px;*/
+    margin-top: 35px;
+  }
+}
+/*! 375px */
+@media (max-width: 375px) {
+  ._grayBlick button {
+    max-width: 305px;
+    width: auto;
+  }
+}

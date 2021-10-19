@@ -1,0 +1,62 @@
+/*? _RadioLabel*/
+
+._RadioLabel {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  cursor: pointer;
+  padding-right: 5px;
+  margin-top: 21px;
+}
+
+._RadioLabel p {
+  padding-left: 10px;
+  font-family: "PTRootUIWebBold";
+  font-size: 16px;
+  line-height: 1.4;
+}
+._RadioLabel p a {
+  color: #e31f3d;
+}
+._RadioLabel span {
+  position: relative;
+  display: block;
+  min-height: 23px;
+  min-width: 23px;
+  border: 1.5px solid #9ba3be;
+  border-radius: 5px;
+}
+._RadioLabel span::after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 9px;
+  width: 9px;
+  background-color: #9ba3be;
+}
+
+._RadioLabel input {
+  display: none;
+}
+._RadioLabel input:checked ~ span::after {
+  display: block;
+}
+
+/*! 840px */
+@media (max-width: 840px) {
+  ._RadioLabel span {
+    min-height: 35px;
+    min-width: 35px;
+    margin-top: 5px;
+  }
+  ._RadioLabel span::after {
+    height: 14px;
+    width: 14px;
+  }
+  ._RadioLabel p {
+    padding-left: 20px;
+  }
+}

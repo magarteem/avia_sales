@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "PTRootUIWebRegular";
+  src: url("outElements/PT-Root-UI_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTRootUIWebMedium";
+  src: url("outElements/PT-Root-UI_Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTRootUIWebBold";
+  src: url("outElements/PT-Root-UI_Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik-Semibold";
+  src: url("outElements/Graphik-Semibold.woff2") format("woff2"),
+    url("outElements/Graphik-Semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "PTRootUIWebRegular";
+  background-color: #e8edf3;
+  color: #11172b;
+}

@@ -1,0 +1,46 @@
+.__rightTitleUP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #11172a;
+}
+.__rightTitleUP h1 {
+  font-family: "PTRootUIWebBold";
+  font-size: 28px;
+  color: #fff;
+}
+
+.__rightTitleDOWN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  background-color: #1e2848;
+}
+.__rightTitleDOWN h2 {
+  font-family: "PTRootUIWebBold";
+  font-size: 18px;
+  line-height: 1.11;
+  color: #fff;
+}
+
+/*! 480px */
+@media (max-width: 480px) {
+  .__rightTitleUP {
+    height: auto;
+  }
+  .__rightTitleUP h1 {
+    padding: 9px 0 10px;
+    font-size: 26px;
+    line-height: 1.5;
+  }
+  .__rightTitleDOWN {
+    height: auto;
+  }
+  .__rightTitleDOWN h2 {
+    padding: 12px 0 13px;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}

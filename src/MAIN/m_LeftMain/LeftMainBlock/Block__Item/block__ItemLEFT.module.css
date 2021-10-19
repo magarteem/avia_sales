@@ -1,0 +1,112 @@
+.with50Obj {
+  display: flex;
+  width: 50%;
+}
+/* ?___itemL*/
+/*?___itemL1*/
+.___itemL1 {
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.___itemL1UP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.___itemL1UP img {
+  margin-top: 25px;
+}
+.___itemL1UP p {
+  margin-top: 7px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/*?___itemL1Down*/
+.___itemL1Down {
+  margin-bottom: 18px;
+}
+.___itemL1Down span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1e2848;
+  padding-left: 4px;
+}
+
+/*?___itemL2*/
+.___itemL2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  padding-left: 12px;
+}
+/*?___itemL2Down*/
+.___itemL2UP {
+  margin-top: 25px;
+}
+.___itemL2UP p {
+  font-family: "PTRootUIWebBold";
+  font-size: 18px;
+  line-height: 1.5;
+}
+.___itemL2UP span:last-child {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #11172b;
+}
+.___itemL2UPdiv {
+  display: flex;
+  align-items: center;
+  font-family: "PTRootUIWebMedium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #9ba3be;
+}
+.___itemL2UPdiv span {
+  padding-left: 5px;
+}
+/*?___itemL2Down*/
+.___itemL2Down {
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1e2848;
+}
+
+/*! 840px */
+@media (max-width: 840px) {
+  .___itemL2UP,
+  .___itemL1UP img {
+    margin-top: 18px;
+  }
+  .___itemL2UP {
+    text-align: left;
+  }
+  .___itemL2Down {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  /*.___itemL1UP p {
+    margin-top: 7px;
+  }*/
+}
+/*! 767px */
+@media (max-width: 767px) {
+  .___itemL1 {
+    padding-right: 5px;
+  }
+}
+/*! 375px */
+@media (max-width: 375px) {
+  .___itemL2UP p {
+    font-size: 16px;
+  }
+  .___itemL1Down span {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,194 @@
+/*! FormPyment*/
+/*?.formPymentImg */
+.formPymentImg {
+  display: flex;
+  width: 50%;
+}
+.formPyment {
+  display: flex;
+  justify-content: space-between;
+}
+.formPyment form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+.formPyment form input {
+  height: 55px;
+}
+/*? formPymentFlags575px*/
+.formPymentFlags575px {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+}
+.formPymentFlags575px img {
+  width: 50px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+/*! formPymentCards*/
+.formPymentCards {
+  width: 50%;
+  margin-left: 16px;
+}
+.formPymentCards input:focus::placeholder {
+  color: transparent;
+}
+.PymInpNumber,
+.PymInpExpiryMMYY,
+.PymInpCVC,
+.PymInpName {
+  cursor: pointer;
+  height: 60px;
+  border: solid 1px #d3dce5;
+  padding: 18px 20px;
+  font-family: "PTRootUIWebMedium";
+  font-size: 15px;
+  line-height: 1.86;
+  color: #9ba3be;
+}
+
+.PymInpNumber {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.PymInpExpiryMMYY {
+  width: 88px;
+}
+.PymInpCVC {
+  width: 166px;
+  margin-left: 20px;
+}
+.PymInpName {
+  width: 100%;
+}
+
+/* ? telPhone*/
+.telPhone {
+  display: flex;
+  width: 100%;
+  height: 55px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /*border-bottom: solid 1px #d3dce5;*/
+}
+.PymSelect,
+.PymInpTel {
+  cursor: pointer;
+  height: 60px;
+  font-family: "PTRootUIWebBold";
+  font-size: 15px;
+  color: #9ba3be;
+}
+
+.PymSelect {
+  width: 20%;
+  height: 55px;
+  border-bottom-left-radius: 10px;
+  border-top: solid 1px #d3dce5;
+  border-left: solid 1px #d3dce5;
+}
+.PymInpTel {
+  width: 80%;
+  padding: 18px 0;
+  line-height: 1.86;
+  border-top: solid 1px #d3dce5;
+  border-bottom: solid 1px #d3dce5;
+  border-right: solid 1px #d3dce5;
+  border-bottom-right-radius: 10px;
+}
+
+/*! 1300px */
+@media (max-width: 1300px) {
+  .formPymentCards {
+    width: 43%;
+  }
+  .PymInpCVC {
+    width: 115px;
+    margin-left: 0;
+  }
+  .PymSelect {
+    width: 30%;
+  }
+}
+
+/*! 1100px */
+@media (max-width: 1100px) {
+  .formPyment form {
+    margin-top: 10px;
+  }
+  .formPymentCards {
+    width: 58%;
+    margin-left: 0;
+  }
+  .formPyment {
+    flex-direction: column;
+    align-items: center;
+  }
+  .formPymentImg {
+    width: 100%;
+  }
+}
+/*! 991px */
+@media (max-width: 991px) {
+  .formPymentCards {
+    width: 65%;
+  }
+}
+/*! 575px */
+@media (max-width: 575px) {
+  .formPymentCards {
+    width: 100%;
+  }
+}
+/*! 575px */
+@media (max-width: 575px) {
+  .formPyment form {
+    margin-top: 35px;
+    gap: 10px 4px;
+    flex-shrink: 1;
+  }
+  .formPymentImg {
+    display: none;
+  }
+  .formPymentFlags575px {
+    display: flex;
+  }
+
+  .PymInpExpiryMMYY {
+    width: 25%;
+    max-width: 75px;
+  }
+  .PymInpCVC {
+    width: 40%;
+    max-width: 135px;
+  }
+}
+/*! 375px */
+@media (max-width: 375px) {
+  .PymInpExpiryMMYY {
+    width: 28%;
+    max-width: 75px;
+  }
+  .PymInpCVC {
+    width: 40%;
+    max-width: 135px;
+  }
+  .PymInpNumber,
+  .PymInpExpiryMMYY,
+  .PymInpCVC,
+  .PymInpName {
+    padding: 18px 10px;
+    font-size: 14px;
+  }
+  .telPhone input {
+    font-size: 14px;
+  }
+  .PymSelect {
+    width: 35%;
+  }
+}
